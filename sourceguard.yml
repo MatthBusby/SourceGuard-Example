@@ -1,0 +1,26 @@
+#Kick off Github Action
+name: 'Deploy Action'
+
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - '_build_flag'
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    env:
+      working-directory: . 
+      
+    steps:
+    - name: Setup Docker
+      uses: docker-practice/actions-setup-docker@0.0.1
+    
+    - name: Checkout Code
+      uses: actions/checkout@v1
+    
+    - name: SourceGuard Code Scan
+      run: |
+            sh 'chmod +x sourceguard-cli' 
+            sh './sourceguard-cli --src .'
