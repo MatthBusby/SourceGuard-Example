@@ -34,4 +34,5 @@ jobs:
       run: |
             chmod +x sourceguard-cli 
             ./sourceguard-cli --img ./vulnerablewebapp.tar
-            
+      continue-on-error: true
+      
