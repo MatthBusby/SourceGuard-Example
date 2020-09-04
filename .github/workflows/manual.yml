@@ -12,15 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     env:
       working-directory: . 
-      
+      SG_CLIENT_ID: ${{ secrets.SG_CLIENT_ID }}
+      SG_SECRET_KEY: ${{ secrets.SG_SECRET_KEY }}
     steps:
     - name: Setup Docker
       uses: docker-practice/actions-setup-docker@0.0.1
     
     - name: Checkout Code
       uses: actions/checkout@v1
-    
+      
     - name: SourceGuard Code Scan
       run: |
-            sh 'chmod +x sourceguard-cli' 
-            sh './sourceguard-cli --src .'
+            ls
+            chmod +x sourceguard-cli 
+            ./sourceguard-cli --src .
