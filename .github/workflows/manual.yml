@@ -33,5 +33,5 @@ jobs:
     - name: SourceGuard Container Image Scan
       run: |
             chmod +x sourceguard-cli 
-            ./sourceguard-cli --src --img vulnerablewebapp.tar
+            ./sourceguard-cli --img vulnerablewebapp.tar
             
