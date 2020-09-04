@@ -9,9 +9,10 @@ This was written based off of the guide from Dean Houari. Check out his writeup 
 [Github Account](https://github.com) <br>
 [Check Point Infinty Portal](https://portal.checkpoint.com) <br>
 
-### DevSecOpps Workflow
+### DevSecOpps Workflow:
 ![](/images/cicd.png)
 
+### SourceGuard
 
 This tool has the ability to scan your code prior to building and scan the container image after building. It is very simple to implement. Once you have your sourceguard-cli file and SourceGuard API keys, it is just a matter of adding the following code into Github Actions:
 
