@@ -9,6 +9,7 @@ This was written based off of the guide from Dean Houari. Check out his writeup 
 [Github Account](https://github.com) <br>
 [Check Point Infinty Portal](https://portal.checkpoint.com) <br>
 
+### DevSecOpps Workflow
 ![](/images/cicd.png)
 
 
